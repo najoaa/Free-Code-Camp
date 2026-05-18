@@ -371,6 +371,7 @@
       section { padding: 72px 24px; }
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
       .connect-inner { grid-template-columns: 1fr; gap: 48px; }
+    
       .project-row { grid-template-columns: 40px 1fr 36px; }
       .proj-tags { display: none; }
       footer { flex-direction: column; gap: 12px; text-align: center; padding: 24px; }

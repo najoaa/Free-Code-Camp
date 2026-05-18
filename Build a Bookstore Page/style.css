@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+:root {
+  --bg:     #F5F2EC;
+  --ink:    #1A1714;
+  --accent: #C8502A;
+  --muted:  #8A857D;
+  --card:   #EDEAE2;
+  --border: #D4CFC6;
+  --serif:  'Instrument Serif', Georgia, serif;
+  --sans:   'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: var(--serif);
+  text-align: center;
+  margin-top: 30px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+p {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card {
+  background: var(--bg);
+  width: 300px;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+  transform-origin: left;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(200, 80, 42, 0.3);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.card h2 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: left;
+  line-height: 1.6;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btn {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+#view-cart-btn {
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+#view-cart-btn:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+#checkout-btn {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+#checkout-btn:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}

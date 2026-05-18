@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+:root {
+  --bg:     #F5F2EC;
+  --ink:    #1A1714;
+  --accent: #C8502A;
+  --muted:  #8A857D;
+  --card:   #EDEAE2;
+  --border: #D4CFC6;
+  --serif:  'Instrument Serif', Georgia, serif;
+  --sans:   'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--bg);
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  font-family: var(--serif);
+  text-align: center;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  letter-spacing: -0.03em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+  margin-top: 36px;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+li::marker {
+  color: var(--accent);
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

@@ -12,6 +12,7 @@
     <p id="description">We appreciate your time. Help us understand your experience with web technologies.</p>
 
     <form id="survey-form">
+      <div class="field">
       <!-- Name Input -->
       <label id="name-label" for="name">Full Name:</label>
       <input 
@@ -21,8 +22,9 @@
         placeholder="Enter your full name" 
         required 
       />
-
+ </div>
       <!-- Email Input -->
+       <div class="field">
       <label id="email-label" for="email">Email Address:</label>
       <input 
         type="email" 
@@ -31,8 +33,9 @@
         placeholder="Enter your email address" 
         required 
       />
-
+       </div>
       <!-- Number Input -->
+       <div class="field">
       <label id="number-label" for="number">Years of Experience:</label>
       <input 
         type="number" 
@@ -42,8 +45,10 @@
         max="50" 
         placeholder="Enter years of experience" 
       />
+</div>
 
       <!-- Dropdown -->
+       <div class="field">
       <label for="dropdown">Primary Role:</label>
       <select id="dropdown" name="role" required>
         <option value="">-- Select your role --</option>
@@ -52,15 +57,17 @@
         <option value="fullstack">Full Stack Developer</option>
         <option value="designer">UI/UX Designer</option>
       </select>
-
+</div>
       <!-- Radio Buttons -->
+       <div class="field">
       <fieldset>
         <legend>Preferred Work Environment:</legend>
         <label><input type="radio" name="environment" value="remote" /> Remote</label>
         <label><input type="radio" name="environment" value="office" /> Office</label>
       </fieldset>
-
+       </div>
       <!-- Checkboxes -->
+       <div class="field">
       <fieldset>
         <legend>Technologies You Use:</legend>
         <label><input type="checkbox" name="tech" value="html" /> HTML</label>
@@ -68,7 +75,7 @@
         <label><input type="checkbox" name="tech" value="js" /> JavaScript</label>
         <label><input type="checkbox" name="tech" value="react" /> React</label>
       </fieldset>
-
+       </div>
       <!-- Textarea -->
       <label for="comments">Additional Comments:</label>
       <textarea id="comments" name="comments" placeholder="Tell us more..."></textarea>
