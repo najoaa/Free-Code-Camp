@@ -1,136 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Najoaa | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najoaa | Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-    <nav id="navbar">
-        <div class="container">
-            <a href="#welcome-section" class="nav-logo">najoaa</a>
-            <div class="nav-links">
-                <a href="#welcome-section">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#connect">Connect</a>
-            </div>
-        </div>
-    </nav>
 
-    <section id="welcome-section" class="hero">
-        <div class="container">
-            <h1>Hi, I’m Najoa — a freelance web designer & developer crafting clean, functional websites with modern tools.</h1>
-            <div class="button-wrapper">
-            <a href="https://github.com/najoaa/" id="profile-link" target="_blank" class="btn">
-                <i class="fab fa-github"></i> GitHub Profile
-            </a>
-            </div>
-        </div>
-    </section>
-    <!--connect  -->
-     <section id="connect" class="connect-section">
-        <div class="container">
-            <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-behance"></i> Behance</a>
-                <a href="#" class="social-link"><i class="fab fa-dribbble"></i> Dribbble</a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
-            </div>
-        </div>
-    </section>
-<!-- about section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="two-column">
-                <div class="left-column">
-                    <h3>About Me</h3>
-                </div>
-                <div class="right-column">
-                    <p>I'm a frontend developer passionate about creating beautiful, functional websites. My journey in web development started with FreeCodeCamp, and I've been building projects to hone my skills.</p>
-                    <div class="skills">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Responsive Design</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- project section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-tile">
-                    <div class="project-info">
-                        <h3>Survey Form</h3>
-                        <p>A responsive survey form built for FreeCodeCamp certification</p>
-                    </div>
-                    <div class="project-link">
-                        <h1 class="project-title">01</h1>
-                        <a href="https://najoaa.github.io/fcc-survey-from/" target="_blank" class="project-arrow">
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <div class="underline"></div>
-                    </div>
-                </div>
-                
-                <div class="project-tile">
-                    <div class="project-info">
-                        <h3>Technical Documentation</h3>
-                        <p>A documentation page for JavaScript basics</p>
-                    </div>
-                    <div class="project-link">
-                        <h1 class="project-title">02</h1>
-                        <a href="https://najoaa.github.io/fcc-technical-documentation-page/" target="_blank" class="project-arrow">
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <div class="underline"></div>
-                    </div>
-                </div>
-                
-                <div class="project-tile">
-                    <div class="project-info">
-                        <h3>Product Landing</h3>
-                        <p>A landing page for a fictional product</p>
-                    </div>
-                    <div class="project-link">
-                        <h1 class="project-title">03</h1>
-                        <a href="https://najoaa.github.io/fcc-product-landing-page/" target="_blank" class="project-arrow">
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <div class="underline"></div>
-                    </div>
-                </div>
-                
-                <div class="project-tile">
-                    <div class="project-info">
-                        <h3>Tribute Page</h3>
-                        <p>A tribute to Marie Curie and her achievements</p>
-                    </div>
-                    <div class="project-link">
-                        <h1 class="project-title">04</h1>
-                        <a href="https://najoaa.github.io/fcc-tribute-marie-curie/" target="_blank" class="project-arrow">
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <div class="underline"></div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">najoaa</a>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#connect">Connect</a>
+    </div>
+  </nav>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Najoaa. All rights reserved.</p>
-            <a href="mailto:najoa2252@gmail.com" class="email-link">najoa2252@gmail.com</a>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-label">Frontend Developer</div>
+      <h1 class="hero-h1">Crafting the&nbsp;web,<br><em>one pixel</em><br>at a time.</h1>
+      <p class="hero-sub">I build clean, functional, and beautiful websites using HTML, CSS & JavaScript — starting with FreeCodeCamp and growing every day.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> See Projects</a>
+        <a href="https://github.com/najoaa/" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stat-grid">
+        <div class="stat-cell">
+          <div class="stat-num">11</div>
+          <div class="stat-label">Projects built</div>
         </div>
-    </footer>
+        <div class="stat-cell">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Months learning</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Core skills</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">More to build</div>
+        </div>
+      </div>
+      <div class="availability-badge">
+        <span class="dot"></span>
+        Available for freelance projects
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header fade-up">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-aside fade-up">
+        <div class="about-aside-label">Skills & Tools</div>
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Git & GitHub</li>
+          <li>FreeCodeCamp</li>
+        </ul>
+      </div>
+      <div class="about-body fade-up">
+        <p>A frontend developer who loves building things for the web — clean code, thoughtful design, real projects.</p>
+        <p>My journey in web development started with <strong>FreeCodeCamp</strong>, where I've been consistently building projects to develop a solid foundation. Every project here is a step forward — from survey forms to landing pages to documentation sites.</p>
+        <p>I believe the best way to learn is to <strong>build, break, and rebuild</strong>. I'm passionate about responsive design and writing code that looks as good as it works.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header fade-up">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid fade-up">
+
+      <a href="https://najoaa.github.io/fcc-survey-from/" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">01</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Survey Form</div>
+        <div class="proj-desc">A responsive survey form built for FreeCodeCamp certification</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="https://najoaa.github.io/fcc-technical-documentation-page/" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">02</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Technical Documentation Page</div>
+        <div class="proj-desc">A documentation page covering JavaScript basics with sidebar navigation</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="https://najoaa.github.io/fcc-product-landing-page/" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">03</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Product Landing Page</div>
+        <div class="proj-desc">A landing page for a fictional product with responsive layout</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="https://najoaa.github.io/fcc-tribute-marie-curie/" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">04</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Tribute Page — Marie Curie</div>
+        <div class="proj-desc">A tribute page celebrating the life and achievements of Marie Curie</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build a Bookstore Page/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">05</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Bookstore Page</div>
+        <div class="proj-desc">A styled bookstore layout showcasing a curated collection</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build a cat blog page/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">06</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Cat Blog Page</div>
+        <div class="proj-desc">A fun blog layout dedicated to everything cats</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build a event hub/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">07</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Event Hub</div>
+        <div class="proj-desc">An event listing and hub page with clean card layout</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build a Recipe Page/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">08</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Recipe Page</div>
+        <div class="proj-desc">A beautifully formatted recipe page with ingredients and steps</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build a Travel Agency Page/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">09</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Travel Agency Page</div>
+        <div class="proj-desc">A landing page for a fictional travel agency with destination cards</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build a Video Compilation Page/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">10</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Video Compilation Page</div>
+        <div class="proj-desc">A page showcasing embedded video content in a clean grid</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build an HTML Audio and Video Player Instructions/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">11</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">HTML Audio & Video Player</div>
+        <div class="proj-desc">A custom audio and video player built with native HTML elements</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+      <a href="../Build Quincy's Job Tips Page/index.html" target="_blank" class="project-card">
+        <div class="card-top">
+          <span class="proj-num">12</span>
+          <div class="proj-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+        <div class="proj-name">Quincy's Job Tips Page</div>
+        <div class="proj-desc">A job listing page built as part of FreeCodeCamp curriculum</div>
+        <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect">
+    <div class="section-header fade-up">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Connect</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="connect-inner">
+      <div class="connect-left fade-up">
+        <h2>Let's build something <em>together.</em></h2>
+        <p>Whether you have a project idea, a question, or just want to say hi — I'm always open to connecting with like-minded people.</p>
+      </div>
+      <div class="connect-right fade-up">
+        <a href="#" class="social-row">
+          <span class="social-label"><i class="fab fa-behance social-icon"></i> Behance</span>
+          <i class="fas fa-arrow-right social-arrow"></i>
+        </a>
+        <a href="#" class="social-row">
+          <span class="social-label"><i class="fab fa-dribbble social-icon"></i> Dribbble</span>
+          <i class="fas fa-arrow-right social-arrow"></i>
+        </a>
+        <a href="#" class="social-row">
+          <span class="social-label"><i class="fab fa-linkedin-in social-icon"></i> LinkedIn</span>
+          <i class="fas fa-arrow-right social-arrow"></i>
+        </a>
+        <a href="https://github.com/najoaa/" target="_blank" class="social-row">
+          <span class="social-label"><i class="fab fa-github social-icon"></i> GitHub</span>
+          <i class="fas fa-arrow-right social-arrow"></i>
+        </a>
+        <a href="#" class="social-row">
+          <span class="social-label"><i class="fab fa-instagram social-icon"></i> Instagram</span>
+          <i class="fas fa-arrow-right social-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Najoaa. All rights reserved.</p>
+    <a href="mailto:najoa2252@gmail.com" class="email-link">najoa2252@gmail.com</a>
+  </footer>
+
+  <script>
+    // Scroll-triggered fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
