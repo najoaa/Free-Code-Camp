@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #f0f2f5;
+  color: #1a1a1a;
+  padding: 2rem 1rem;
+}
+
+/* Table */
+table {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+thead tr {
+  background-color: #f7f8fa;
+}
+
+th {
+  padding: 10px 1.25rem;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Body */
+tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.15s ease;
+}
+
+tbody tr:hover {
+  background-color: #f7f8fa;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 11px 1.25rem;
+  color: #1a1a1a;
+}
+
+/* Genre badges */
+.genre {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.fantasy {
+  background-color: #EEEDFE;
+  color: #3C3489;
+}
+
+.dystopian {
+  background-color: #FCEBEB;
+  color: #791F1F;
+}
+
+.fiction {
+  background-color: #E1F5EE;
+  color: #085041;
+}
+
+.classic {
+  background-color: #FAEEDA;
+  color: #633806;
+}
+
+
+/* Footer */
+tfoot tr {
+  background-color: #f7f8fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+tfoot td {
+  padding: 10px 1.25rem;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
